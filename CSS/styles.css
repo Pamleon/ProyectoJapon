@@ -1,0 +1,145 @@
+
+    body {font-family:"Big Shoulders Inline", sans-serif;
+        font-optical-sizing:auto;
+        margin:0;
+        padding:0;}
+
+    .fondo{ background-image: url(../Imagenes/texture-2136831_640.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;}
+
+
+    .frente {text-align: center;
+            color:white;
+            }
+
+            header {
+                color: #fff; 
+                background:url(../Imagenes/yokohama-2223502_640.jpg);
+                background-size: cover; /* le digo que me cubra toda la pantalla */
+                background-position: 60%;/* le digo como la quiero ver,puedo colocar en 50%, 10% etc*/
+                display: block; 
+                height: 130px;
+                position: relative;
+                text-align: center;
+                width: 100%;
+                padding: 20px;
+                }
+
+            header img{width: 100%;
+                        height: 100%;}
+            /* position: fixed   porque no me queda fijo mi navegacion?*/
+            
+            .frente h1{background-color: rgb(242, 13, 13);
+                    max-width:400px;
+                    margin: auto;
+                    border-radius: 15px; 
+                    border: black;
+                    border:1px solid black}
+
+        ul {display:inline-flex;
+            list-style: none;
+            margin: 0px;}
+
+        /* nav{position:sticky;} */
+
+        nav a{text-decoration: none;}
+
+        .boton {text-decoration: none;
+                border-radius: 20px;
+                background-color:red;
+                text-align: center;
+                display: block;
+                padding: 10px;
+                color:white;
+                margin: 10px;
+                
+                }
+
+        .boton:hover {background-color: rgb(226, 184, 32);
+                        color:black}
+        
+        .contenedor {width: 300px;
+                    height: 50px;
+                    background-color: red;
+                    margin: auto;
+                    margin-top: 10px;
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: 20px;
+                    border:black;
+                    border:2px solid black
+                    }
+
+        .contenido {animation: desplazamiento 5s reverse infinite;
+                    width: 400px;
+                    position: absolute;
+                    height: 50px;
+                    
+                    }
+        .contenido p {font-size: 25px;
+                    margin: 5px;
+                    padding: 0;
+                    color:white;
+                    }
+        .contenido a{text-decoration: none;}
+
+        @keyframes desplazamiento{ 
+                    0% {transform: translateX(-350px);}
+                    100%{transform:translateX(200px);}
+                        }
+            
+        .bienvenida { text-align: center;
+                    overflow: hidden;}/* como hacer que sea un efecto zoom dentro de mi overflow?? */
+
+        .bienvenida img {border-radius: 20px;
+                    height: 150px;
+                    margin-left: 25px;}
+            
+        .bienvenida img:hover{transform: scale(1.2);}
+
+        .resetas img:hover{transform: scale(1.1);}
+            
+        .resetas{text-align: center;
+                width: 80%;
+                margin: 10px auto;
+                }
+        .resetas img{border-radius: 20px;
+                    max-height: 300px;/* max-height para que es? */
+                    max-width: 400px;
+                        }
+
+        .resetas1{text-align: center;
+            color: #000;
+            width: 80%;
+            margin: 10px auto
+                    }
+        .fotos{overflow: hidden;text-align: center;}/* quiero que mi imagen se vea como un zoom  */
+            
+        .fotos img{text-align: center;
+                border-radius: 20px;
+                width: 200px;
+                height:150px ;
+                margin-left: 25px;
+                padding: 10px;
+                }
+               
+       
+        .fotos img:hover{transform: scale(1.1);}
+            
+            footer {background: url(../Imagenes/yokohama-2223502_640.jpg);
+                background-size: cover; /* le digo que me cubra toda la pantalla */
+                background-position: 60%;/* le digo como la quiero ver,puedo colocar en 50%, 10% etc*/
+                text-align: center; 
+                color:white;
+                display: block;
+                width: 100%;
+                height: 50px;
+                padding-top: 10px;}/* separa del borde de arriba */
+            
+            footer p {background-color: rgb(242, 13, 13);
+                    max-width:600px ; 
+                    margin: auto;
+                    border-radius: 15px;}
